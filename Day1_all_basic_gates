@@ -1,0 +1,22 @@
+Library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity logic_gates is
+    Port ( A,B : in STD_LOGIC;
+           C,D,E,F,G,H,I : out STD_LOGIC);
+end logic_gates;
+
+architecture Dataflow of logic_gates is
+
+begin
+
+C <= A AND B;
+D <= A OR B;
+E <= NOT A;
+F <= A NAND B;
+G <= A NOR B;
+H <= A XOR B;
+I <= A XNOR B;
+
+end Dataflow;
