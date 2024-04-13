@@ -1,3 +1,5 @@
+__DATAFLOW MODELLING__
+
 Library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
@@ -20,3 +22,8 @@ H <= A XOR B;
 I <= A XNOR B;
 
 end Dataflow;
+
+
+
+__ BEHAVIORAL MODELLING__
+
