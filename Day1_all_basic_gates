@@ -1,4 +1,5 @@
-__DATAFLOW MODELLING__
+VHDL
+__1)DATAFLOW MODELLING__
 
 Library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -25,5 +26,31 @@ end Dataflow;
 
 
 
-__ BEHAVIORAL MODELLING__
+__2) BEHAVIORAL MODELLING__
 
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity logic_gates is
+    Port ( A,B : in STD_LOGIC;
+           C,D,E,F,G,H,I : out STD_LOGIC);
+end logic_gates;
+architecture Behavioral of logic_gates is
+begin
+ process(A, B)
+  begin
+      if A = '1' and B = '1' then
+      C <= '0'; D <= '1'; E <= '1'; F <= '0'; G <= '0'; H <= '0'; I <= '1';
+      end if;
+      if A = '1' and B = '0' then 
+      D <= '0'; E <= '1'; F <= '1'; G <= '0'; H <= '1'; I <= '0';
+      end if;
+      if A = '0' and B = '1' then 
+      C <= '1'; D <= '0'; E <= '1'; F <= '1'; G <= '0'; H <= '1'; I <= '0';
+      end if;
+      if A = '0' and B = '0' then 
+       D <= '0'; E <= '0'; F <= '1'; G <= '1'; H <= '0'; I <= '1';
+      end if;
+ end process;
+end Behavioral;
+
+__3) Structural modelling__
